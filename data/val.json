@@ -1,0 +1,72 @@
+[
+  {
+      "question": "AI giải thích (Explainable AI) là gì và tại sao nó được coi là quan trọng?",
+      "ideal_answer": "Explainable AI (AI giải thích) nhằm làm cho các hệ thống AI trở nên minh bạch và dễ hiểu hơn, cung cấp thông tin về cách chúng đưa ra quyết định. Nó được coi là quan trọng để xây dựng niềm tin, trách nhiệm và đảm bảo sự công bằng trong các hệ thống AI.",
+      "reference": "Chương 5: Tương lai của Trí tuệ nhân tạo - AI giải thích (XAI); Chương 19: AI và Đạo đức",
+      "has_answer": true,
+      "reasoning": "Tài liệu trực tiếp định nghĩa và giải thích tầm quan trọng của AI giải thích."
+  },
+  {
+      "question": "AI có thể được sử dụng để dự đoán động đất không?",
+      "ideal_answer": "Tôi không có đủ thông tin để trả lời câu hỏi này.",
+      "reference": "Không có",
+      "has_answer": false,
+      "reasoning": "Tài liệu không đề cập đến việc sử dụng AI để dự đoán động đất."
+  },
+  {
+      "question": "Những mối quan ngại đạo đức nào liên quan đến nhận diện khuôn mặt bằng AI?",
+      "ideal_answer": "Tôi không có đủ thông tin để trả lời câu hỏi này.",
+      "reference": "Không có, mặc dù các khái niệm liên quan xuất hiện trong Chương 4 (Những tác động đạo đức và xã hội) và Chương 2 (Thị giác máy tính)",
+      "has_answer": false,
+      "reasoning": "Mặc dù tài liệu thảo luận về các vấn đề đạo đức liên quan đến AI *nói chung* và đề cập đến nhận diện khuôn mặt như một *công nghệ*, nhưng không thảo luận cụ thể về các vấn đề đạo đức *của* nhận diện khuôn mặt."
+  },
+  {
+      "question": "AI đóng góp như thế nào vào y học cá nhân hóa?",
+      "ideal_answer": "AI hỗ trợ y học cá nhân hóa bằng cách phân tích dữ liệu cá nhân của bệnh nhân, dự đoán phản ứng điều trị và điều chỉnh các can thiệp phù hợp với nhu cầu cụ thể. Điều này nâng cao hiệu quả điều trị và giảm tác dụng phụ.",
+      "reference": "Chương 11: AI và Chăm sóc sức khỏe - Y học cá nhân hóa",
+      "has_answer": true,
+      "reasoning": "Tài liệu trực tiếp giải thích vai trò của AI trong y học cá nhân hóa."
+  },
+  {
+      "question": "Tài liệu có đề cập đến công ty cụ thể nào phát triển công nghệ AI không?",
+      "ideal_answer": "Tôi không có đủ thông tin để trả lời câu hỏi này.",
+      "reference": "Không có",
+      "has_answer": false,
+      "reasoning": "Tài liệu tập trung vào các khái niệm và ứng dụng của AI, không đề cập đến các công ty cụ thể."
+  },
+  {
+      "question": "Vai trò của AI trong lưới điện thông minh là gì?",
+      "ideal_answer": "AI tối ưu hóa phân phối năng lượng trong lưới điện thông minh bằng cách giám sát theo thời gian thực, phản ứng với nhu cầu và tích hợp các nguồn năng lượng phân tán. Điều này nâng cao độ tin cậy của lưới điện, giảm lãng phí năng lượng và hỗ trợ năng lượng tái tạo.",
+      "reference": "Chương 5: Tương lai của Trí tuệ nhân tạo - Lưu trữ năng lượng và Quản lý lưới điện - Lưới điện thông minh; Chương 15",
+      "has_answer": true,
+      "reasoning": "Tài liệu trực tiếp mô tả chức năng của AI trong lưới điện thông minh."
+  },
+  {
+      "question": "AI có thể viết được một cuốn tiểu thuyết hoàn chỉnh và nguyên bản không?",
+      "ideal_answer": "Tôi không có đủ thông tin để trả lời câu hỏi này.",
+      "reference": "Chương 9: AI, Sáng tạo và Đổi mới - AI trong Viết và Sáng tạo nội dung (và có thể là Chương 16)",
+      "has_answer": false,
+      "reasoning": "Tài liệu đề cập đến việc AI được sử dụng để viết và sáng tạo nội dung, hỗ trợ nghiên cứu và chỉnh sửa. Nó *không* nêu rõ rằng AI có thể tự viết một *cuốn tiểu thuyết hoàn chỉnh và nguyên bản*."
+  },
+  {
+      "question": "Cobot là gì?",
+      "ideal_answer": "Tài liệu đề cập đến môi trường hợp tác (cobot) trong các robot công nghiệp.",
+      "reference": "Chương 6: AI và Robot - Các loại Robot - Robot Công nghiệp",
+      "has_answer": true,
+      "reasoning": "Tài liệu định nghĩa 'cobot'."
+  },
+  {
+      "question": "Công nghệ Thu giữ Không khí Trực tiếp (DAC) được sử dụng để làm gì?",
+      "ideal_answer": "Công nghệ DAC loại bỏ CO2 trực tiếp từ khí quyển. CO2 được thu giữ có thể được lưu trữ hoặc sử dụng trong các ứng dụng khác nhau.",
+      "reference": "Chương 5: Tương lai của Trí tuệ nhân tạo - Thu giữ và Sử dụng Carbon - Thu giữ Không khí Trực tiếp; Chương 15",
+      "has_answer": true,
+      "reasoning": "Tài liệu trực tiếp giải thích mục đích của Công nghệ Thu giữ Không khí Trực tiếp."
+  },
+  {
+      "question": "AI hiện đang được sử dụng để kiểm soát hệ thống vũ khí hạt nhân không?",
+      "ideal_answer": "Tôi không có đủ thông tin để trả lời câu hỏi này.",
+      "reference": "Không có (mặc dù Chương 4 thảo luận về việc vũ khí hóa AI)",
+      "has_answer": false,
+      "reasoning": "Tài liệu thảo luận về *các vấn đề đạo đức* của việc vũ khí hóa AI, nhưng không nêu rõ AI hiện có được sử dụng để kiểm soát hệ thống vũ khí hạt nhân hay không."
+  }
+]

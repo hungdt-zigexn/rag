@@ -1,0 +1,89 @@
+Điện toán lượng tử: Nguyên tắc, Tiến bộ và Khả năng
+
+Giới thiệu
+
+Máy tính lượng tử đại diện cho một trong những sự thay đổi mô hình quan trọng nhất trong lý thuyết tính toán kể từ khi xuất hiện máy tính điện tử. Khác với máy tính cổ điển xử lý thông tin bằng các chữ số nhị phân (bit), máy tính lượng tử tận dụng các hiện tượng cơ học lượng tử để xử lý thông tin bằng các bit lượng tử, hay qubit. Sự khác biệt cơ bản này cho phép máy tính lượng tử có khả năng giải quyết một số vấn đề nhanh hơn theo cấp số nhân so với máy tính cổ điển, thách thức hiểu biết hiện tại của chúng ta về độ phức tạp tính toán và tạo ra những khả năng mới trong nhiều lĩnh vực khác nhau bao gồm mã hóa, khoa học vật liệu, tối ưu hóa và trí tuệ nhân tạo.
+
+Lĩnh vực này có nguồn gốc khái niệm từ đầu những năm 1980 khi nhà vật lý Richard Feynman đề xuất ý tưởng về máy tính lượng tử. Feynman nhận thấy rằng việc mô phỏng các hệ thống lượng tử trên máy tính cổ điển là vô cùng phức tạp và gợi ý rằng các máy tính dựa trên nguyên tắc lượng tử có thể hiệu quả hơn cho những mô phỏng như vậy. Hiểu biết này đã đặt nền tảng cho máy tính lượng tử như chúng ta hiểu ngày nay.
+
+Cơ sở Cơ học Lượng tử
+
+Chồng chập
+
+Tại trung tâm của điện toán lượng tử là nguyên tắc chồng chập. Trong khi một bit cổ điển phải là 0 hoặc 1, một qubit có thể tồn tại trong trạng thái mà thực chất là cả 0 và 1 đồng thời cho đến khi được đo. Về mặt toán học, chúng ta biểu diễn điều này như sau:
+
+|ψ⟩ = α|0⟩ + β|1⟩
+
+Trong đó α và β là các số phức thỏa mãn |α|² + |β|² = 1, đại diện cho biên độ xác suất để đo qubit ở trạng thái |0⟩ hoặc |1⟩ tương ứng. Tính chất này cho phép máy tính lượng tử xử lý nhiều khả năng đồng thời, góp phần vào lợi thế tính toán của chúng.
+
+Sự rối lượng tử
+
+Sự rối lượng tử đại diện cho một nền tảng khác của điện toán lượng tử. Khi các qubit trở nên rối, trạng thái của một qubit trở nên liên kết nội tại với trạng thái của một qubit khác, bất kể khoảng cách vật lý tách biệt chúng. Hiện tượng này, mà Einstein nổi tiếng gọi là "hành động kỳ lạ từ xa," cho phép máy tính lượng tử thiết lập các tương quan mà không có tương đương cổ điển.
+
+Một biểu diễn đơn giản của một trạng thái rối là trạng thái Bell:
+
+|Φ⁺⟩ = (|00⟩ + |11⟩)/√2
+
+Trong trạng thái này, việc đo một qubit ngay lập tức xác định trạng thái của qubit kia, bất kể khoảng cách tách biệt. Sự rối lượng tử cho phép các thuật toán lượng tử thực hiện các phép toán với hiệu suất không thể đạt được trong tính toán cổ điển.
+
+Giao thoa lượng tử
+
+Sự can thiệp lượng tử xảy ra khi các biên độ xác suất của các trạng thái lượng tử tương tác. Thông qua việc thao tác cẩn thận, sự can thiệp xây dựng có thể tăng cường các kết quả tính toán mong muốn trong khi sự can thiệp phá hủy có thể ức chế những kết quả không mong muốn. Các thuật toán lượng tử được thiết kế đặc biệt để tận dụng các mẫu can thiệp nhằm tăng xác suất đo được câu trả lời đúng.
+
+Cổng và Mạch Lượng Tử
+
+Máy tính lượng tử xử lý thông tin thông qua các cổng lượng tử, tương tự như các cổng logic trong máy tính cổ điển nhưng hoạt động theo các nguyên tắc cơ học lượng tử. Các cổng lượng tử phổ biến bao gồm:
+
+- Cổng Pauli-X: Tương đương lượng tử của cổng NOT cổ điển, đảo ngược |0⟩ thành |1⟩ và ngược lại.
+- Cổng Hadamard (H): Tạo ra sự chồng chéo bằng cách biến đổi |0⟩ thành (|0⟩ + |1⟩)/√2 và |1⟩ thành (|0⟩ - |1⟩)/√2.
+- CNOT Gate: Một cổng hai qubit đảo ngược trạng thái của qubit thứ hai nếu qubit đầu tiên là |1⟩, rất quan trọng để tạo ra sự rối.
+- Phase Gates (S, T): Giới thiệu các sự thay đổi pha trong các trạng thái lượng tử, cần thiết cho các thuật toán lượng tử.
+
+Các mạch lượng tử kết hợp những cổng này theo các chuỗi cụ thể để thực hiện các thuật toán. Khác với các mạch cổ điển, các mạch lượng tử vốn dĩ có thể đảo ngược cho đến khi xảy ra phép đo, một thuộc tính được gọi là sự đồng pha lượng tử.
+
+Các Thuật Toán Lượng Tử Chính
+
+Thuật toán Shor
+
+Được phát triển bởi Peter Shor vào năm 1994, thuật toán Shor đại diện cho một thời điểm quan trọng trong lĩnh vực điện toán lượng tử. Nó cung cấp một phương pháp hiệu quả để tìm các thừa số nguyên tố của các số nguyên lớn, một vấn đề được cho là khó khăn về mặt tính toán đối với các máy tính cổ điển. Sự an toàn của mã hóa RSA được sử dụng rộng rãi phụ thuộc chính vào độ khó này. Thuật toán Shor có thể lý thuyết phân tích các số lớn trong thời gian đa thức, tạo ra một mối đe dọa đáng kể đối với các hệ thống mã hóa hiện tại khi các máy tính lượng tử đủ mạnh trở nên khả dụng.
+
+Thuật toán hoạt động bằng cách giảm vấn đề phân tích thành nhiệm vụ tìm chu kỳ của một hàm, có thể được giải quyết hiệu quả bằng cách sử dụng biến đổi Fourier lượng tử. Độ phức tạp thời gian là O((log N)³), nhanh hơn gấp nhiều lần so với các thuật toán cổ điển tốt nhất đã biết.
+
+Thuật toán Grover
+
+Được phát triển bởi Lov Grover vào năm 1996, thuật toán Grover cung cấp một sự tăng tốc bình phương cho các vấn đề tìm kiếm không có cấu trúc. Trong khi một máy tính cổ điển cần O(N) phép toán để tìm kiếm một cơ sở dữ liệu không được sắp xếp gồm N mục, thuật toán Grover thực hiện điều này trong O(√N) phép toán.
+
+Sửa lỗi lượng tử
+
+Một trong những thách thức lớn nhất trong tính toán lượng tử là duy trì sự đồng bộ lượng tử trong sự hiện diện của tiếng ồn môi trường. Sửa lỗi lượng tử (QEC) giải quyết thách thức này bằng cách mã hóa các qubit logic trên nhiều qubit vật lý, cho phép phát hiện và sửa lỗi mà không cần đo trực tiếp trạng thái lượng tử (điều này sẽ làm sụp đổ sự chồng chéo).
+
+Các phương pháp phần cứng lượng tử hiện tại
+
+Qubit Siêu dẫn
+
+Hiện tại, nền tảng điện toán lượng tử tiên tiến nhất, các qubit siêu dẫn hoạt động bằng cách sử dụng các mối nối Josephson—hai siêu dẫn được tách biệt bởi một rào cản cách điện mỏng.
+
+Ion Bị Bẫy
+
+Máy tính lượng tử ion bị bẫy sử dụng các trường điện từ để treo các ion riêng lẻ (nguyên tử mang điện) trong chân không.
+
+Lợi thế lượng tử và ứng dụng thực tiễn
+
+Hóa Học Lượng Tử và Khoa Học Vật Liệu
+
+Máy tính lượng tử tự nhiên phù hợp để mô phỏng các hệ thống lượng tử, có khả năng cách mạng hóa khả năng của chúng ta trong việc thiết kế các vật liệu và hợp chất hóa học mới.
+
+Vấn đề tối ưu hóa
+
+Nhiều quy trình công nghiệp liên quan đến các thách thức tối ưu hóa phức tạp mà máy tính lượng tử có thể giải quyết hiệu quả hơn so với các phương pháp cổ điển.
+
+Triển vọng Tương lai
+
+Con đường đến với máy tính lượng tử thực tiễn có thể sẽ diễn ra qua các giai đoạn khác nhau:
+1. Kỷ nguyên NISQ (hiện tại)
+2. Hệ thống sửa lỗi
+3. Máy tính lượng tử chịu lỗi
+
+Kết luận
+
+Máy tính lượng tử đại diện cho cả một mô hình tính toán cách mạng và một trong những dự án kỹ thuật tham vọng nhất của thời đại chúng ta. Trong khi các máy tính lượng tử hiện tại vẫn còn hạn chế về khả năng, lĩnh vực này đang tiến triển nhanh chóng nhờ vào sự đầu tư toàn cầu từ các chính phủ, tập đoàn và các tổ chức học thuật.
